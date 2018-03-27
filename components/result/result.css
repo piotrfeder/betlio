@@ -1,0 +1,25 @@
+.result {
+    font-size: 26px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    flex: 1;
+    border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 0 10px;
+    text-align:center;
+}
+
+.match-teams__result {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50px;
+}
+
+.match__header .result {
+    border-bottom: 0;
+    font-size: 40px;
+    margin: 0;
+    flex: 0 0 50px;
+}

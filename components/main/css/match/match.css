@@ -1,0 +1,129 @@
+.match {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.match-item {
+    flex: 0 0 calc(25% - 10px);
+    margin: 0 0 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    transform: translateY(100px);
+    opacity:0;
+    animation-duration: 1s;
+    animation-name: loading;
+    animation-fill-mode: forwards;
+    align-self: stretch;
+}
+
+.match__title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: calc(100% - 50px);
+}
+
+.match-teams {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.match__team {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    width: 100%;
+    display:inline-block;
+    word-wrap: break-word;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.match__result {
+    background-color: #fff;
+}
+
+.match__result .match__team {
+    text-align:center;
+}
+
+
+.match__predict {
+    background-color: #fff;
+}
+
+.match-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.match-bottom__data {
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.match-bottom__round {
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.match-bottom__status {
+    font-size: 12px;
+    background-color: #fff;
+}
+.filter {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 20px;
+}
+
+.filter__head,
+.filter__box,
+.filter__button{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.filter__button {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    color: #9e9e9e;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter__button.active {
+    border: 1px solid #00a1b6
+}
+
+
+
+@media screen and (max-width: 1120px) {
+    .match-item {
+        flex: 0 0 calc(33% - 10px);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .match-item {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .match-item {
+        flex: 0 0 100%;
+    }
+}

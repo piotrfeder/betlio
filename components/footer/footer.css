@@ -1,0 +1,9 @@
+footer {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

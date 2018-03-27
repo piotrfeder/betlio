@@ -1,0 +1,84 @@
+.last-matches {
+    padding: 0 0 20px;
+    border-bottom: 1px solid #eee;
+}
+.last-match {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex: 0 0 100%;
+    margin: 0 0 10px;
+}
+
+.last-match__team {
+    flex: 1 0 35%;
+    display: inline-block;
+}
+
+.last-match__team--right {
+    text-align: right;
+}
+
+.last-match__team--left {
+    text-align: left;
+}
+
+.last-match__score,
+.last-match__divide {
+    flex: 0 0 5%;
+    text-align:center;
+    display: inline-block;
+}
+
+/* last stats */
+.last-stats {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    flex-basis: 100%;
+    max-height: 150px;
+
+}
+
+.last-stats__title {
+    flex: 0 0 100%;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.last-stats__item {
+    flex: 0 0 33%;
+    margin: 0 0 10px;
+}
+
+.last-stats__item p {
+    display: inline-block;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+
+
+
+    .last-match,
+    .last-stats {
+        font-size: 14px;
+    }
+
+    .last-stats {
+        max-height: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .last-stats {
+        flex-flow: row wrap;
+        max-height: none;
+    }
+    .last-stats__item {
+        flex: 0 0 50%;
+    }
+}

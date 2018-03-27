@@ -1,0 +1,38 @@
+.chart {
+    margin: 0 0 20px 0;
+    padding: 20px 20px 20px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: all .3s ease-in-out;
+    flex: 0 0 calc(50% - 10px);
+
+}
+
+
+
+.chart:hover {
+    box-shadow: 0 0 40px #ddd;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .chart {
+        flex: 0 0 calc(33% - 10px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .chart {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .chart {
+        flex: 0 0 100%;
+    }
+}
+
+

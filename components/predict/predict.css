@@ -1,0 +1,27 @@
+.predict__box {
+    display: inline-block;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.match__predict {
+    font-size: 14px;
+    font-weight: 800;
+    text-align:center;
+    padding: 10px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: 'Nunito', sans-serif;
+}
+
+.match__predict--win {
+    border: 1px solid #44ca42;
+    color: #44ca42;
+}
+
+.match__predict--lose {
+    opacity: .3;
+}

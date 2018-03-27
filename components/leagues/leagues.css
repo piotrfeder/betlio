@@ -1,0 +1,53 @@
+.leagues {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.league {
+    flex: 0 0 calc(20% - 10px);
+    margin: 0 0 20px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align:center;
+    padding: 20px;
+    transform: translateY(100px);
+    opacity:0;
+    animation-duration: 1s;
+    animation-name: loading;
+    animation-fill-mode: forwards;
+    align-self: stretch;
+}
+
+.league__name img {
+    max-width: 100px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .league {
+        flex: 0 0 calc(25% - 10px);
+    }
+}
+
+
+@media screen and (max-width: 580px)
+{
+    .league {
+        flex: 0 0 calc(33% - 10px);
+    }
+}
+
+@media screen and (max-width: 460px)
+{
+    .league {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .league {
+        flex: 0 0 100%;
+    }
+}

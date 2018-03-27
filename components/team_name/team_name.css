@@ -1,0 +1,45 @@
+.team-title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 100;
+
+}
+
+.team-title__crest {
+    margin: 0 20px 0 0;
+    width: 100px;
+    text-align: center;
+}
+
+.team-title__crest img {
+    max-height: 100px;
+    max-width: 100%;
+    width:100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .team-title__crest {
+        width: 50px;
+    }
+
+    .team-title {
+        font-size: 18px;
+    }
+
+    .match__header .result {
+        font-size: 30px;
+    }
+
+    .last-match,
+    .last-stats {
+        font-size: 14px;
+    }
+
+    .last-stats {
+        max-height: 120px;
+    }
+}

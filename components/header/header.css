@@ -1,0 +1,53 @@
+.header {
+    background-color: #fff;
+    width: 100%;
+    padding: 0 0 5px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 20px;
+}
+
+.header__logo {
+    display:block;
+    max-height: 48px;
+}
+
+.header__logo-img {
+    max-height: 48px;
+    float:left;
+    padding: 10px 0 0;
+    
+}
+
+.header__ham {
+    float: right;
+    width: 30px;
+    height: 48px;
+    cursor: pointer;
+    padding: 12px 0;
+}
+
+.header__ham:hover  .header__ham-bar--second,
+.header__ham:hover  .header__ham-bar--third {
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.header__ham-bar {
+    width: 100%;
+    background-color: #eee;
+    height: 3px;
+    margin: 0 0 5px;
+    display: block;
+    float: right;
+    clear: both;
+    will-change: auto;
+    transition: all .3s ease-in-out;
+}
+
+.header__ham-bar--second {
+    width: 70%;
+}
+
+.header__ham-bar--third {
+    width:50%;
+}
